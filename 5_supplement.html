@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" id="b-css" href="https://bootswatch.com/4/journal/bootstrap.css">
+    <link rel="stylesheet" id="b-min-css" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+    <link rel="stylesheet" id="v-scss" href="https://bootswatch.com/4/journal/_variables.scss">
+    <link rel="stylesheet" id="b-scss" href="https://bootswatch.com/4/journal/_bootswatch.scss">
+    <title></title>
+</head>
+
+<body>
+   <input type="hidden" value="5" id = "pg-num">
+    <div class="container">
+
+        <div class="panel col-md-8">
+
+
+            <div class="panel-heading">
+                <div class="text-right">
+                    <br>
+                    <span class="small text-info">단체 전신 설립: 2019.9</span><br>
+                    <span class="small  text-info">정관 최초 실행: 2019.10</span>
+                </div>
+
+                <p class="h2 text-center">
+                    <a class="btn btn-primary text-white" href="4_open_chat.html"> ◀ </a>
+                    제 5장 총칙
+<!--                    <a class="btn btn-primary text-white" href="5_supplement.html"> ▶ </a>-->
+
+                </p>
+                <pre></pre>
+            </div>
+            <div class="panel-body" align="center">
+                <div class="card  text-left border-primary" style="padding: 60px">
+
+                    <p class="h5">제 1조 [목적]</p>
+                    <ul>
+                        <li><span class="text-primary">본 단체는 연수유라(본명 김연수)의 팬클럽 연합으로 『연수유라 팬클럽 대전(YFD)』, 『검은마스크단』, 『유라모노프렌즈』의 연수유라의 덕질을 위해 만든 연합 단체이다.</span></li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <p class="h5">제 2조 [명칭]</p>
+                    <ul>
+                        <li><span class="text-primary">본 단체는 ‘연수유라 팬클럽 연합’이라 한다. 영문으로 <span class="strong">Yeonsooyura Fanclub Association</span>(이하 YFA) 라 한다.</span></li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <p class="h5">제 3조 [활동]</p>
+                    <ul>
+                        <li>
+                            <p><span class="text-primary">본 단체는 제 1조의 목적을 달성하기 위해 아래와 같은 활동을 행한다.</span></p>
+                            <div class="text-danger">
+                                <p class="small"><strong><span>①</span></strong><span> 연수유라 덕질</span></p>
+                                <p class="small"><strong><span>②</span></strong><span> 팬클럽 정기모임 개최</span></p>
+                                <p class="small"><strong><span>③</span></strong><span> 연수유라 학술회 개최</span></p>
+                                <p class="small"><strong><span>④</span></strong><span> 연수유라 유튜브 구독 및 좋아요 알람설정등의 서포트</span></p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class = "btn-block">
+                    <ul class="pagination">
+
+                        <li class="page-item">
+                            <a class="page-link" href="1_general.html">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="2_member.html">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="3_admin.html">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="4_open_chat.html">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="5_supplement.html">5</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    
+$(function(){
+    $(".page-item").each(function(){
+        if($(this).children("a").text()==$("#pg-num").val()){
+            $(this).addClass("active");
+        }
+    })
+  //alert()
+});    
+    
+</script>
+
+</html>
