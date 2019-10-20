@@ -8,6 +8,7 @@
     <link rel="stylesheet" id="b-min-css" href="https://bootswatch.com/4/journal/bootstrap.min.css">
     <link rel="stylesheet" id="v-scss" href="https://bootswatch.com/4/journal/_variables.scss">
     <link rel="stylesheet" id="b-scss" href="https://bootswatch.com/4/journal/_bootswatch.scss">
+    <script src="util.js"></script>
     <title></title>
 </head>
 
@@ -90,17 +91,6 @@
 
 </body>
 
-<script>
-    
-$(function(){
-    $(".page-item").each(function(){
-        if($(this).children("a").text()==$("#pg-num").val()){
-            $(this).addClass("active");
-        }
-    })
-  //alert()
-});    
-    
-</script>
+
 
 </html>

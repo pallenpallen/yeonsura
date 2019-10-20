@@ -8,6 +8,7 @@
     <link rel="stylesheet" id="b-min-css" href="https://bootswatch.com/4/journal/bootstrap.min.css">
     <link rel="stylesheet" id="v-scss" href="https://bootswatch.com/4/journal/_variables.scss">
     <link rel="stylesheet" id="b-scss" href="https://bootswatch.com/4/journal/_bootswatch.scss">
+    <script src="util.js"></script>
     <title></title>
 </head>
 
@@ -29,7 +30,12 @@
                     <a class="btn btn-primary text-white" href="index.html"> ◀ </a>
                     제 1장 총칙
                     <a class="btn btn-primary text-white" href="2_member.html"> ▶ </a>
-
+					
+					<!--       <a class="img" href="index.html"><span>◀</span> <img alt="이전으로" src="img/죨디1.png" width = "100px"> </a>
+                    제 1장 총칙
+                    <a class="" href="2_member.html">  <img alt="다음으로" src="img/죨디1_1.png" width = "100px"> <span>▶</span></a>
+					 -->
+					
                 </p>
                 <pre></pre>
             </div>
@@ -89,18 +95,5 @@
 
 
 </body>
-
-<script>
-    
-$(function(){
-    $(".page-item").each(function(){
-        if($(this).children("a").text()==$("#pg-num").val()){
-            $(this).addClass("active");
-        }
-    })
-  //alert()
-});    
-    
-</script>
 
 </html>
