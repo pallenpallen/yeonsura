@@ -10,6 +10,19 @@ $(function () {
             $(this).addClass("active");
         }
     })
+    $("ul>li>span").each(function() {
+    		$(this).addClass("text-primary")
+    })
+    
+    $("p>span").each(function() {
+    	$(this).addClass("text-primary")
+    })
+    
+    $("ol").each(function() {
+    	$(this).addClass("text-primary")
+    })
+    
+    
 	function setTheme(paramTheme){
 		var bcss = "https://bootswatch.com/4/"+paramTheme+"/bootstrap.css";
 		var bmcss = "https://bootswatch.com/4/"+paramTheme+"/bootstrap.min.css";
